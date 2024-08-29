@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- fragment_login_step_2.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Текст "Отправили код на example@mail.ru" -->
+    <TextView
+        android:id="@+id/tvEmailSent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Отправили код на example@mail.ru"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Хардкодный текст с инструкциями -->
+    <TextView
+        android:id="@+id/tvInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Напишите его, чтобы подтвердить, что это вы, а не кто-то другой входит в личный кабинет."
+        android:layout_below="@id/tvEmailSent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Поле для ввода кода (4 ячейки) -->
+    <LinearLayout
+        android:id="@+id/codeInputLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tvInstructions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp">
+
+        <!-- 4 EditText для кода -->
+        <EditText
+            android:id="@+id/etCode1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="@drawable/code_input_background" />
+
+        <EditText
+            android:id="@+id/etCode2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="@drawable/code_input_background"
+            android:layout_marginStart="8dp" />
+
+        <EditText
+            android:id="@+id/etCode3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="@drawable/code_input_background"
+            android:layout_marginStart="8dp" />
+
+        <EditText
+            android:id="@+id/etCode4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="@drawable/code_input_background"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Кнопка Подтвердить -->
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Подтвердить"
+        android:enabled="false"
+        android:layout_below="@id/codeInputLayout"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

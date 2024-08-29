@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_search">
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.hathunter.ui.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/navigation_favorites"
+        android:name="com.example.hathunter.ui.favorites.FavoritesFragment"
+        android:label="@string/title_favorites"
+        tools:layout="@layout/fragment_favorites" />
+
+    <fragment
+        android:id="@+id/navigation_responses"
+        android:name="com.example.hathunter.ui.responses.ResponsesFragment"
+        android:label="@string/title_responses"
+        tools:layout="@layout/fragment_responses" />
+
+    <fragment
+        android:id="@+id/navigation_messages"
+        android:name="com.example.hathunter.ui.messages.MessagesFragment"
+        android:label="@string/title_messages"
+        tools:layout="@layout/fragment_messages" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.hathunter.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.hathunter.ui.login.LoginFragment"
+        android:label="fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_loginStep2Fragment"
+            app:destination="@id/loginStep2Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginStep2Fragment"
+        android:name="com.example.hathunter.ui.login.LoginStep2Fragment"
+        android:label="LoginStep2Fragment" />
+
+    <fragment
+        android:id="@+id/matchedJobsFragment"
+        android:name="com.example.hathunter.MatchedJobsFragment"
+        android:label="Matched Jobs"
+        tools:layout="@layout/fragment_matched_jobs">
+        <!-- Добавьте нужные действия -->
+    </fragment>
+</navigation>

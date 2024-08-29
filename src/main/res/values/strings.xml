@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Hat hunter</string>
+    <string name="title_search">Поиск</string>
+    <string name="title_favorites">Избранное</string>
+    <string name="title_responses">Отклики</string>
+    <string name="title_messages">Сообщения</string>
+    <string name="title_profile">Профиль</string>
+    <string name="login_title">Вход в личный кабинет</string>
+    <string name="job_search">Поиск работы</string>
+    <string name="email_hint">Электронная почта</string>
+    <string name="continue_text">Продолжить</string>
+    <string name="login_with_password">Войти с паролем</string>
+    <string name="employee_search">Поиск сотрудников</string>
+    <string name="vacancy_placement">Размещение вакансий и доступ к базе резюме</string>
+    <string name="find_employees">Я ищу сотрудников</string>
+    <string name="email_sent_text">Отправили код на %1$s</string>
+    <string name="confirm_button">Подтвердить</string>
+    <string name="invalid_email">Вы ввели неверный e-mail</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_hint">Вакансии для вас</string>
+    <string name="response_title">Отклик на вакансию</string>
+    <string name="response_description">Заполните поле ниже, чтобы откликнуться на вакансию.</string>
+    <string name="enter_cover_letter">Введите сопроводительное письмо</string>
+    <string name="respond">Откликнуться</string>
+    <string name="cancel">Отмена</string>
+    <string name="response2_title">Подтвердите детали отклика</string>
+    <string name="placeholder_user_name">Имя пользователя</string>
+    <string name="placeholder_user_email">Электронная почта пользователя</string>
+    <string name="enter_cover_letter">Введите сопроводительное письмо</string>
+    <string name="submit_response">Отправить отклик</string>
+    <string name="cancel">Отмена</string>
+</resources>

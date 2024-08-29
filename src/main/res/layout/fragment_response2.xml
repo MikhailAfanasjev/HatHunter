@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Заголовок -->
+    <TextView
+        android:id="@+id/tvResponseTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/response2_title"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        android:layout_gravity="center"/>
+
+    <!-- Поле для отображения имени пользователя -->
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/placeholder_user_name"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Поле для отображения электронной почты -->
+    <TextView
+        android:id="@+id/tvUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/placeholder_user_email"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Поле для ввода сопроводительного письма -->
+    <EditText
+        android:id="@+id/etCoverLetter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_cover_letter"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:gravity="start|top"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Кнопка отправки отклика -->
+    <Button
+        android:id="@+id/btnSubmitResponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit_response"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="?attr/colorPrimary"
+        android:textColor="@android:color/white"/>
+
+    <!-- Кнопка отмены -->
+    <Button
+        android:id="@+id/btnCancelResponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/transparent"
+        android:textColor="?attr/colorPrimary" />
+</LinearLayout></FrameLayout>

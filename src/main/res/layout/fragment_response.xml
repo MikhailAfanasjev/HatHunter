@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/response_background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Заголовок -->
+<TextView
+android:id="@+id/tvTitle"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="@string/response_title"
+android:textAppearance="?attr/textAppearanceHeadline6"
+android:layout_gravity="center"/>
+
+    <!-- Краткое описание -->
+<TextView
+android:id="@+id/tvDescription"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="@string/response_description"
+android:layout_marginTop="8dp"
+android:layout_gravity="center"/>
+
+    <!-- Поле для ввода сопроводительного письма -->
+<EditText
+android:id="@+id/etCoverLetter"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="@string/enter_cover_letter"
+android:inputType="textMultiLine"
+android:lines="4"
+android:gravity="start|top"
+android:layout_marginTop="16dp"/>
+
+    <!-- Кнопка отклика -->
+<Button
+android:id="@+id/btnRespond"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="@string/respond"
+android:layout_marginTop="16dp"
+android:backgroundTint="?attr/colorPrimary"
+android:textColor="@android:color/white"/>
+
+    <!-- Кнопка закрытия -->
+<Button
+android:id="@+id/btnCancel"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="@string/cancel"
+android:layout_marginTop="8dp"
+android:backgroundTint="@android:color/transparent"
+android:textColor="?attr/colorPrimary" />
+
+    </LinearLayout>
